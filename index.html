@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>2bleed 4 dis gen — Goth Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#070607;
+      --panel:#0f0f10;
+      --muted:#9b9b9b;
+      --accent:#7b0f0f;
+      --glass:rgba(255,255,255,0.04);
+      --maxw:1100px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:linear-gradient(180deg,var(--bg) 0%, #050505 80%);
+      color:#eee;
+      font-family: "Cinzel", serif;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:var(--maxw);margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:20px 0}
+    .brand{display:flex;gap:14px;align-items:center}
+    .logo{width:64px;height:64px;border-radius:50%;background:radial-gradient(circle at 30% 30%,#2b0000, #0b0000);display:flex;align-items:center;justify-content:center;font-weight:900;font-family:"UnifrakturCook", serif;font-size:22px;color:#fff;box-shadow:0 6px 20px rgba(0,0,0,.6)}
+    .title{display:flex;flex-direction:column}
+    .title h1{margin:0;font-size:20px;letter-spacing:3px;text-transform:uppercase}
+    .title p{margin:0;font-size:12px;color:var(--muted);font-weight:400}
+    nav{display:flex;gap:16px;align-items:center}
+    .btn{border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:6px;background:transparent;color:inherit;font-weight:700}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:36px 0}
+    .hero h2{font-size:48px;margin:0;letter-spacing:4px}
+    .hero p{color:var(--muted);max-width:54ch;margin-top:12px;font-family:Georgia,serif}
+    .hero .cta{margin-top:20px;display:flex;gap:12px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.04);padding:18px;border-radius:12px}
+    .manifesto{margin-top:28px;padding:28px;border-radius:10px;background:var(--panel);box-shadow:0 8px 30px rgba(0,0,0,.6)}
+    .manifesto h3{margin:0 0 8px 0;font-size:18px;text-transform:uppercase;letter-spacing:3px}
+    .manifesto p{color:var(--muted);margin:0}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:26px}
+    .gallery img{width:100%;height:220px;object-fit:cover;border-radius:8px;display:block;filter:grayscale(.05) contrast(.9);}
+    .contact{margin-top:28px;display:grid;grid-template-columns:1fr 340px;gap:20px;align-items:start}
+    form input, form textarea{width:100%;padding:12px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:inherit}
+    form button{margin-top:8px;padding:10px 14px;border-radius:8px;background:var(--accent);border:none;color:#111;font-weight:800;cursor:pointer}
+    footer{margin-top:40px;padding:28px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,0.03)}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">2B</div>
+        <div class="title">
+          <h1>2bleed 4 dis gen</h1>
+          <p>Gothic collective · manifest &amp; gallery</p>
+        </div>
+      </div>
+      <nav>
+        <a class="btn" href="#manifesto">Manifesto</a>
+        <a class="btn" href="#gallery">Gallery</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h2>Born of Night, Worn as Oath</h2>
+          <p>2bleed 4 dis gen is a chapter — not a trend. We collect traces: textures, symbols, and whispers that outlast seasons. This is a space for visuals, words, and rituals in cloth and shadow. No storefronts, only statements.</p>
+
+          <div class="cta">
+            <a class="card" href="#manifesto">Read the Manifesto</a>
+            <a class="card" href="#gallery">View the Gallery</a>
+          </div>
+
+          <div class="manifesto" id="manifesto">
+            <h3>The Manifesto</h3>
+            <p>We choose the black not to hide but to declare. Each cut, each stitch, each emblem is a line in our language of dissent. We honour craft, discard fast fashion rituals, and curate imagery that holds weight. Wear it like a sigil.</p>
+          </div>
+        </div>
+
+        <aside>
+          <div class="card" style="text-align:center">
+            <h4 style="margin:0 0 8px 0;letter-spacing:2px">Current Ritual</h4>
+            <p style="margin:0;color:var(--muted)">A rotating visual drop — collages, prints, and limited zines. Follow on socials for ephemeral releases.</p>
+            <div style="margin-top:12px;display:flex;gap:8px;justify-content:center">
+              <a class="btn" href="#">Instagram</a>
+              <a class="btn" href="#">Behance</a>
+            </div>
+          </div>
+
+          <div class="card" style="margin-top:16px;text-align:center">
+            <h4 style="margin:0 0 6px 0">Archive</h4>
+            <p style="margin:0;color:var(--muted)">Curated photo zines and scanned ephemera. Request access via contact.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <img src="https://images.unsplash.com/photo-1518443895471-787f2e5afebb?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1604072366595-e75dc92f0e5b?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1523381294911-8d3cead13475?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1547949003-9792a0e3caa9?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?q=80&w=1200&auto=format&fit=crop">
+        <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?q=80&w=1200&auto=format&fit=crop">
+      </section>
+
+      <section class="contact" id="contact">
+        <div>
+          <h3 style="margin-top:0;letter-spacing:2px">Reach the Lair</h3>
+          <p style="color:var(--muted)">For collaborations, zine requests, or gallery access — send a short note. We reply when the moon is right.</p>
+        </div>
+
+        <div class="card">
+          <form onsubmit="handleSubmit(event)">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required style="margin-top:8px">
+            <textarea id="message" rows="4" placeholder="Message" style="margin-top:8px"></textarea>
+            <button type="submit">Send Message</button>
+            <p id="response" style="margin-top:8px;color:var(--muted);font-size:13px"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>
+          <strong style="letter-spacing:2px">2bleed 4 dis gen</strong>
+          <div style="font-size:12px;color:var(--muted)">©2025 — not a store, a statement.</div>
+        </div>
+        <div style="color:var(--muted);font-size:13px">Designed for nightfall · contact: hello@2bleed4disgen.co</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('message').value.trim();
+      const resp = document.getElementById('response');
+      if(!name || !email){resp.textContent = 'Please include name and email.';return}
+      resp.textContent = 'Thanks — your message has been sent into the void.';
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
